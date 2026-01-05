@@ -6,10 +6,12 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
+import { HelpTooltip } from '@/components/HelpTooltip';
 
 export const InvestmentCalculator = () => {
   const { t } = useLanguage();
   const calc = t.tools.calculator;
+  const tooltips = t.tooltips;
 
   const [initialAmount, setInitialAmount] = useState(1000);
   const [monthlyContribution, setMonthlyContribution] = useState(100);
@@ -81,6 +83,7 @@ export const InvestmentCalculator = () => {
             <Label className="flex items-center gap-2 text-foreground">
               <Wallet className="h-4 w-4 text-primary" />
               {calc.initialAmount}
+              <HelpTooltip content={tooltips.initialAmount} />
             </Label>
             <Input
               type="number"
@@ -96,6 +99,7 @@ export const InvestmentCalculator = () => {
             <Label className="flex items-center gap-2 text-foreground">
               <TrendingUp className="h-4 w-4 text-primary" />
               {calc.monthlyContribution}
+              <HelpTooltip content={tooltips.monthlyContribution} />
             </Label>
             <Input
               type="number"
@@ -111,6 +115,7 @@ export const InvestmentCalculator = () => {
             <Label className="flex items-center gap-2 text-foreground">
               <Calendar className="h-4 w-4 text-primary" />
               {calc.years}: {years}
+              <HelpTooltip content={tooltips.timeHorizon} />
             </Label>
             <Slider
               value={[years]}
@@ -134,20 +139,30 @@ export const InvestmentCalculator = () => {
             </Label>
             <div className="grid grid-cols-3 gap-2">
               {(['low', 'medium', 'high'] as const).map((risk) => (
-                <Button
-                  key={risk}
-                  variant={riskProfile === risk ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => setRiskProfile(risk)}
-                  className="w-full"
-                >
-                  {calc.risk[risk]}
-                </Button>
+                <div key={risk} className="relative">
+                  <Button
+                    variant={riskProfile === risk ? 'default' : 'outline'}
+                    size="sm"
+                    onClick={() => setRiskProfile(risk)}
+                    className="w-full"
+                  >
+                    {calc.risk[risk]}
+                  </Button>
+                </div>
               ))}
             </div>
-            <p className="text-xs text-muted-foreground">
-              {calc.expectedReturn}: {results.returnPercentage}%
-            </p>
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <span>{calc.expectedReturn}: {results.returnPercentage}%</span>
+              <HelpTooltip 
+                content={
+                  riskProfile === 'low' 
+                    ? tooltips.riskLow 
+                    : riskProfile === 'medium' 
+                    ? tooltips.riskMedium 
+                    : tooltips.riskHigh
+                } 
+              />
+            </div>
           </div>
         </div>
 
