@@ -87,7 +87,7 @@ const GlossaryPage = () => {
             className="text-center py-12"
           >
             <p className="text-muted-foreground">
-              {searchQuery ? 'No results found' : 'No terms available'}
+              {searchQuery ? t.glossary.noResults : t.glossary.noTerms}
             </p>
           </motion.div>
         )}
