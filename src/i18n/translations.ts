@@ -13,6 +13,7 @@ export const translations = {
       investments: 'Inversiones',
       tools: 'Herramientas',
       glossary: 'Glosario',
+      faq: 'FAQ',
     },
     
     // Home
@@ -495,6 +496,83 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       },
     },
     
+    // Onboarding
+    onboarding: {
+      skip: 'Omitir',
+      next: 'Siguiente',
+      prev: 'Anterior',
+      start: 'Comenzar',
+      steps: {
+        welcome: {
+          title: 'Bienvenido a BlueMarket',
+          description: 'Tu guía amigable para entender el mundo de las inversiones. Aprende de forma clara y sin complicaciones.',
+        },
+        learn: {
+          title: 'Aprende a tu ritmo',
+          description: 'Descubre qué son las acciones, bonos, ETFs y más. Todo explicado con ejemplos simples y lenguaje cotidiano.',
+        },
+        noExperience: {
+          title: 'Sin experiencia previa',
+          description: 'No necesitas saber nada de finanzas. Empezamos desde cero y avanzamos juntos paso a paso.',
+        },
+        disclaimer: {
+          title: 'Solo contenido educativo',
+          description: 'BlueMarket es una herramienta de aprendizaje. No ofrecemos asesoría financiera ni recomendaciones de inversión.',
+        },
+      },
+    },
+    
+    // Disclaimer
+    disclaimer: {
+      title: 'Aviso importante',
+      short: 'Este contenido es solo educativo, no es asesoría financiera.',
+      points: [
+        'Este contenido tiene fines educativos únicamente',
+        'No proporcionamos asesoría financiera personalizada',
+        'Los resultados de la calculadora son estimaciones',
+        'Consulta a un profesional antes de invertir',
+        'Eres responsable de tus propias decisiones financieras',
+      ],
+    },
+    
+    // FAQ
+    faq: {
+      title: 'Preguntas frecuentes',
+      subtitle: 'Respuestas claras a las dudas más comunes sobre inversiones.',
+      questions: {
+        isAdvice: {
+          q: '¿Esto es asesoría financiera?',
+          a: 'No. BlueMarket es una herramienta educativa. Todo el contenido aquí es para que aprendas conceptos básicos de inversión. No ofrecemos recomendaciones personalizadas. Antes de invertir tu dinero, consulta con un asesor financiero profesional.',
+        },
+        loseMoney: {
+          q: '¿Puedo perder dinero al invertir?',
+          a: 'Sí, es posible. Todas las inversiones tienen algún nivel de riesgo. Incluso las inversiones consideradas "seguras" pueden perder valor en ciertas circunstancias. Por eso es importante entender el riesgo antes de invertir y nunca invertir dinero que necesites a corto plazo.',
+        },
+        onlyRich: {
+          q: '¿Invertir es solo para personas ricas?',
+          a: 'No. Hoy en día puedes empezar a invertir con cantidades pequeñas. Muchas plataformas permiten invertir desde $5 o $10. Lo importante no es cuánto inviertes, sino empezar temprano y ser constante. El tiempo es tu mejor aliado.',
+        },
+        safestInvestment: {
+          q: '¿Cuál es la inversión más segura?',
+          a: 'Los CDTs (certificados de depósito) y los bonos del gobierno suelen considerarse las inversiones más seguras. Tu capital está protegido, aunque los rendimientos son más bajos. Recuerda: a menor riesgo, generalmente menor rendimiento.',
+        },
+        howToStart: {
+          q: '¿Cómo empiezo a invertir en la vida real?',
+          a: 'Primero, aprende los conceptos básicos (¡ya estás en eso!). Luego, asegúrate de tener un fondo de emergencia. Después, investiga plataformas de inversión reguladas en tu país. Empieza con poco, diversifica, y recuerda: la paciencia es clave.',
+        },
+      },
+    },
+    
+    // Tooltips
+    tooltips: {
+      riskLow: 'Inversión conservadora con menor probabilidad de pérdidas, pero también menores ganancias potenciales.',
+      riskMedium: 'Balance entre seguridad y crecimiento. Acepta algo de volatilidad a cambio de mejores rendimientos.',
+      riskHigh: 'Mayor potencial de ganancias pero también mayor riesgo de pérdidas. Requiere horizonte de largo plazo.',
+      initialAmount: 'El dinero que planeas invertir al inicio. Puede ser cualquier cantidad con la que te sientas cómodo.',
+      monthlyContribution: 'Cantidad adicional que invertirás cada mes. Aportes constantes ayudan a crecer tu inversión.',
+      timeHorizon: 'Cuántos años planeas mantener tu inversión. Más tiempo generalmente significa mejores resultados.',
+    },
+    
     // Common
     common: {
       learnMore: 'Aprender más',
@@ -516,6 +594,7 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       investments: 'Investments',
       tools: 'Tools',
       glossary: 'Glossary',
+      faq: 'FAQ',
     },
     
     // Home
@@ -996,6 +1075,83 @@ Advice: Master basic investments (funds, ETFs, stocks) first before even conside
           },
         ],
       },
+    },
+    
+    // Onboarding
+    onboarding: {
+      skip: 'Skip',
+      next: 'Next',
+      prev: 'Previous',
+      start: 'Get Started',
+      steps: {
+        welcome: {
+          title: 'Welcome to BlueMarket',
+          description: 'Your friendly guide to understanding the world of investing. Learn clearly and without complications.',
+        },
+        learn: {
+          title: 'Learn at your own pace',
+          description: 'Discover what stocks, bonds, ETFs and more are. Everything explained with simple examples and everyday language.',
+        },
+        noExperience: {
+          title: 'No prior experience needed',
+          description: "You don't need to know anything about finance. We start from zero and move forward together step by step.",
+        },
+        disclaimer: {
+          title: 'Educational content only',
+          description: 'BlueMarket is a learning tool. We do not offer financial advice or investment recommendations.',
+        },
+      },
+    },
+    
+    // Disclaimer
+    disclaimer: {
+      title: 'Important Notice',
+      short: 'This content is educational only, not financial advice.',
+      points: [
+        'This content is for educational purposes only',
+        'We do not provide personalized financial advice',
+        'Calculator results are estimates',
+        'Consult a professional before investing',
+        'You are responsible for your own financial decisions',
+      ],
+    },
+    
+    // FAQ
+    faq: {
+      title: 'Frequently Asked Questions',
+      subtitle: 'Clear answers to the most common questions about investing.',
+      questions: {
+        isAdvice: {
+          q: 'Is this financial advice?',
+          a: 'No. BlueMarket is an educational tool. All content here is for you to learn basic investment concepts. We do not offer personalized recommendations. Before investing your money, consult with a professional financial advisor.',
+        },
+        loseMoney: {
+          q: 'Can I lose money when investing?',
+          a: 'Yes, it is possible. All investments carry some level of risk. Even investments considered "safe" can lose value under certain circumstances. That is why it is important to understand risk before investing and never invest money you need in the short term.',
+        },
+        onlyRich: {
+          q: 'Is investing only for rich people?',
+          a: 'No. Today you can start investing with small amounts. Many platforms allow investing from $5 or $10. What matters is not how much you invest, but starting early and being consistent. Time is your best ally.',
+        },
+        safestInvestment: {
+          q: 'What is the safest investment?',
+          a: 'CDs (certificates of deposit) and government bonds are usually considered the safest investments. Your capital is protected, although returns are lower. Remember: lower risk generally means lower returns.',
+        },
+        howToStart: {
+          q: 'How do I start investing in real life?',
+          a: "First, learn the basic concepts (you're already doing that!). Then, make sure you have an emergency fund. After that, research regulated investment platforms in your country. Start small, diversify, and remember: patience is key.",
+        },
+      },
+    },
+    
+    // Tooltips
+    tooltips: {
+      riskLow: 'Conservative investment with lower probability of losses, but also lower potential gains.',
+      riskMedium: 'Balance between safety and growth. Accepts some volatility in exchange for better returns.',
+      riskHigh: 'Higher potential for gains but also higher risk of losses. Requires a long-term horizon.',
+      initialAmount: 'The money you plan to invest at the start. It can be any amount you feel comfortable with.',
+      monthlyContribution: 'Additional amount you will invest each month. Consistent contributions help grow your investment.',
+      timeHorizon: 'How many years you plan to hold your investment. More time generally means better results.',
     },
     
     // Common
