@@ -8,6 +8,7 @@ import { Layout } from "@/components/Layout";
 import HomePage from "./pages/HomePage";
 import LearnPage from "./pages/LearnPage";
 import InvestmentsPage from "./pages/InvestmentsPage";
+import ToolsPage from "./pages/ToolsPage";
 import GlossaryPage from "./pages/GlossaryPage";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +26,7 @@ const App = () => (
               <Route path="/" element={<HomePage />} />
               <Route path="/learn" element={<LearnPage />} />
               <Route path="/investments" element={<InvestmentsPage />} />
+              <Route path="/tools" element={<ToolsPage />} />
               <Route path="/glossary" element={<GlossaryPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />

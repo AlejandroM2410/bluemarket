@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Home, BookOpen, Wallet, FileText, Menu, X } from 'lucide-react';
+import { Home, BookOpen, Wallet, FileText, Menu, X, Wrench } from 'lucide-react';
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageToggle } from './LanguageToggle';
@@ -15,6 +15,7 @@ export const Layout = () => {
     { path: '/', label: t.nav.home, icon: Home },
     { path: '/learn', label: t.nav.learn, icon: BookOpen },
     { path: '/investments', label: t.nav.investments, icon: Wallet },
+    { path: '/tools', label: t.nav.tools, icon: Wrench },
     { path: '/glossary', label: t.nav.glossary, icon: FileText },
   ];
 

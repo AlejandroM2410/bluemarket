@@ -11,6 +11,7 @@ export const translations = {
       home: 'Inicio',
       learn: 'Aprende',
       investments: 'Inversiones',
+      tools: 'Herramientas',
       glossary: 'Glosario',
     },
     
@@ -318,6 +319,182 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       },
     },
     
+    // Tools
+    tools: {
+      title: 'Herramientas de aprendizaje',
+      subtitle: 'Calculadoras, comparaciones y guías para entender mejor las inversiones.',
+      
+      // Risk vs Return
+      riskReturn: {
+        title: 'Riesgo vs Rendimiento',
+        subtitle: 'Entiende la relación fundamental de las inversiones',
+        riskTitle: '¿Qué es el riesgo?',
+        riskDesc: 'El riesgo es la posibilidad de que pierdas parte o todo tu dinero. Cuanto mayor es la incertidumbre sobre el resultado, mayor es el riesgo.',
+        riskAnalogy: 'Es como cruzar un río: puedes usar un puente seguro (bajo riesgo) o nadar (alto riesgo). Ambos te llevan al otro lado, pero uno es más arriesgado.',
+        returnTitle: '¿Qué es el rendimiento?',
+        returnDesc: 'El rendimiento es la ganancia que obtienes de tu inversión. Se expresa como porcentaje de lo que invertiste.',
+        returnAnalogy: 'Si plantas un árbol, el rendimiento son las frutas que cosechas. Más cuidado y tiempo generalmente dan más frutos.',
+        relationshipTitle: 'La regla de oro',
+        relationshipDesc: 'Generalmente, las inversiones con mayor potencial de rendimiento también tienen mayor riesgo. No existe inversión de alto rendimiento sin riesgo.',
+        lowRisk: 'Bajo riesgo',
+        mediumRisk: 'Riesgo medio',
+        highRisk: 'Alto riesgo',
+        lowerReturn: '← Menor rendimiento',
+        higherReturn: 'Mayor rendimiento →',
+      },
+      
+      // Calculator
+      calculator: {
+        title: 'Calculadora educativa',
+        subtitle: 'Simula cómo podría crecer tu dinero con el tiempo',
+        initialAmount: 'Monto inicial ($)',
+        monthlyContribution: 'Aporte mensual ($)',
+        years: 'Años',
+        riskProfile: 'Perfil de riesgo',
+        risk: {
+          low: 'Bajo',
+          medium: 'Medio',
+          high: 'Alto',
+        },
+        expectedReturn: 'Rendimiento estimado anual',
+        finalValue: 'Valor final estimado',
+        totalInvested: 'Total invertido',
+        estimatedGain: 'Ganancia estimada',
+        invested: 'Invertido',
+        gain: 'Ganancia',
+        disclaimer: 'Esta calculadora es solo para fines educativos. Los rendimientos mostrados son estimaciones basadas en promedios históricos y no garantizan resultados futuros. Las inversiones reales pueden variar significativamente.',
+      },
+      
+      // Comparisons
+      comparisons: {
+        title: 'Comparaciones simples',
+        cdtVsSavings: {
+          title: 'CDT vs Cuenta de ahorros',
+          optionA: {
+            name: 'CDT',
+            risk: 'Riesgo bajo',
+            whenToUse: 'Cuando puedes dejar tu dinero quieto por meses y quieres ganar más intereses.',
+          },
+          optionB: {
+            name: 'Cuenta de ahorros',
+            risk: 'Riesgo muy bajo',
+            whenToUse: 'Cuando necesitas acceso inmediato a tu dinero para emergencias.',
+          },
+          mainDifference: 'El CDT paga más intereses pero tu dinero queda "atrapado". La cuenta de ahorros paga menos pero puedes retirar cuando quieras.',
+        },
+        cdtVsEtf: {
+          title: 'CDT vs ETF',
+          optionA: {
+            name: 'CDT',
+            risk: 'Riesgo bajo',
+            whenToUse: 'Perfecto si quieres seguridad y saber exactamente cuánto ganarás.',
+          },
+          optionB: {
+            name: 'ETF',
+            risk: 'Riesgo medio',
+            whenToUse: 'Mejor si buscas mayor crecimiento a largo plazo y toleras fluctuaciones.',
+          },
+          mainDifference: 'El CDT tiene rendimiento fijo y garantizado. El ETF puede dar más ganancias pero su valor sube y baja con el mercado.',
+        },
+        stockVsEtf: {
+          title: 'Acciones vs ETF',
+          optionA: {
+            name: 'Acciones individuales',
+            risk: 'Riesgo alto',
+            whenToUse: 'Si quieres elegir empresas específicas y tienes tiempo para investigar.',
+          },
+          optionB: {
+            name: 'ETF',
+            risk: 'Riesgo medio',
+            whenToUse: 'Si prefieres diversificación automática sin elegir empresas una por una.',
+          },
+          mainDifference: 'Con acciones apuestas a una empresa. Con ETFs, inviertes en muchas a la vez, reduciendo el riesgo si alguna falla.',
+        },
+        fixedVsEquities: {
+          title: 'Renta fija vs Acciones',
+          optionA: {
+            name: 'Renta fija (bonos, CDTs)',
+            risk: 'Riesgo bajo',
+            whenToUse: 'Ideal para conservar capital y obtener ingresos predecibles.',
+          },
+          optionB: {
+            name: 'Acciones',
+            risk: 'Riesgo alto',
+            whenToUse: 'Mejor para hacer crecer tu dinero a largo plazo si toleras volatilidad.',
+          },
+          mainDifference: 'Renta fija es como un salario fijo. Acciones son como un negocio propio: más trabajo, más riesgo, pero potencialmente más ganancia.',
+        },
+      },
+      
+      // Common Mistakes
+      mistakes: {
+        title: 'Errores comunes de principiantes',
+        noUnderstanding: {
+          title: 'Invertir sin entender',
+          description: 'Poner dinero en algo solo porque alguien lo recomendó, sin investigar cómo funciona.',
+          tip: 'Antes de invertir, entiende qué estás comprando y cuáles son los riesgos.',
+        },
+        quickProfits: {
+          title: 'Esperar ganancias rápidas',
+          description: 'Creer que te harás rico de la noche a la mañana con inversiones.',
+          tip: 'Las inversiones sólidas crecen con el tiempo. La paciencia es clave.',
+        },
+        noDiversification: {
+          title: 'No diversificar',
+          description: 'Poner todo tu dinero en una sola inversión o tipo de activo.',
+          tip: 'Distribuye tu dinero en diferentes inversiones para reducir el riesgo.',
+        },
+        emotionalDecisions: {
+          title: 'Decisiones emocionales',
+          description: 'Vender por pánico cuando bajan los precios o comprar por euforia cuando suben.',
+          tip: 'Ten un plan y síguelo. No dejes que las emociones guíen tus decisiones.',
+        },
+      },
+      
+      // Investor Profiles
+      profiles: {
+        title: '¿Qué tipo de inversor eres?',
+        conservative: {
+          title: 'Conservador',
+          description: 'Prioriza la seguridad sobre las ganancias. Prefiere no arriesgar su capital.',
+          suitable: ['CDTs y depósitos a plazo', 'Bonos del gobierno', 'Fondos de renta fija', 'Cuentas de ahorro de alto rendimiento'],
+        },
+        moderate: {
+          title: 'Moderado',
+          description: 'Busca un balance entre seguridad y crecimiento. Acepta algo de volatilidad.',
+          suitable: ['ETFs diversificados', 'Fondos balanceados', 'Mezcla de bonos y acciones', 'Fondos de inversión moderados'],
+        },
+        aggressive: {
+          title: 'Agresivo',
+          description: 'Busca máximo crecimiento. Tolera alta volatilidad y riesgo de pérdidas.',
+          suitable: ['Acciones individuales', 'ETFs de crecimiento', 'Inversiones en sectores específicos', 'Mercados emergentes'],
+        },
+      },
+      
+      // Key Takeaways
+      takeaways: {
+        title: 'Puntos clave para recordar',
+        items: [
+          {
+            title: 'Antes de invertir',
+            points: [
+              'Paga tus deudas de alto interés primero',
+              'Ten un fondo de emergencia (3-6 meses de gastos)',
+              'Invierte solo dinero que no necesitarás pronto',
+            ],
+          },
+          {
+            title: 'Durante tu viaje inversor',
+            points: [
+              'Empieza pequeño y aprende',
+              'La diversificación es tu amiga',
+              'El tiempo en el mercado importa más que el timing',
+            ],
+          },
+        ],
+      },
+    },
+    
     // Common
     common: {
       learnMore: 'Aprender más',
@@ -337,6 +514,7 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       home: 'Home',
       learn: 'Learn',
       investments: 'Investments',
+      tools: 'Tools',
       glossary: 'Glossary',
     },
     
@@ -641,6 +819,182 @@ Advice: Master basic investments (funds, ETFs, stocks) first before even conside
           term: 'Capital',
           def: 'The money you have available to invest, or the total value of your investments. "Protecting your capital" means making sure you don\'t lose the money you have invested.',
         },
+      },
+    },
+    
+    // Tools
+    tools: {
+      title: 'Learning Tools',
+      subtitle: 'Calculators, comparisons, and guides to better understand investing.',
+      
+      // Risk vs Return
+      riskReturn: {
+        title: 'Risk vs Return',
+        subtitle: 'Understand the fundamental relationship of investing',
+        riskTitle: 'What is risk?',
+        riskDesc: 'Risk is the possibility of losing part or all of your money. The greater the uncertainty about the outcome, the higher the risk.',
+        riskAnalogy: "It's like crossing a river: you can use a safe bridge (low risk) or swim across (high risk). Both get you to the other side, but one is riskier.",
+        returnTitle: 'What is return?',
+        returnDesc: 'Return is the profit you earn from your investment. It is expressed as a percentage of what you invested.',
+        returnAnalogy: 'If you plant a tree, the return is the fruit you harvest. More care and time generally yield more fruit.',
+        relationshipTitle: 'The golden rule',
+        relationshipDesc: 'Generally, investments with higher potential returns also carry higher risk. There is no such thing as a high-return, no-risk investment.',
+        lowRisk: 'Low risk',
+        mediumRisk: 'Medium risk',
+        highRisk: 'High risk',
+        lowerReturn: '← Lower return',
+        higherReturn: 'Higher return →',
+      },
+      
+      // Calculator
+      calculator: {
+        title: 'Educational Calculator',
+        subtitle: 'Simulate how your money could grow over time',
+        initialAmount: 'Initial amount ($)',
+        monthlyContribution: 'Monthly contribution ($)',
+        years: 'Years',
+        riskProfile: 'Risk profile',
+        risk: {
+          low: 'Low',
+          medium: 'Medium',
+          high: 'High',
+        },
+        expectedReturn: 'Expected annual return',
+        finalValue: 'Estimated final value',
+        totalInvested: 'Total invested',
+        estimatedGain: 'Estimated gain',
+        invested: 'Invested',
+        gain: 'Gain',
+        disclaimer: 'This calculator is for educational purposes only. The returns shown are estimates based on historical averages and do not guarantee future results. Actual investments may vary significantly.',
+      },
+      
+      // Comparisons
+      comparisons: {
+        title: 'Simple Comparisons',
+        cdtVsSavings: {
+          title: 'CD vs Savings Account',
+          optionA: {
+            name: 'CD (Certificate of Deposit)',
+            risk: 'Low risk',
+            whenToUse: 'When you can leave your money untouched for months and want to earn more interest.',
+          },
+          optionB: {
+            name: 'Savings Account',
+            risk: 'Very low risk',
+            whenToUse: 'When you need immediate access to your money for emergencies.',
+          },
+          mainDifference: 'CDs pay more interest but your money is "locked." Savings accounts pay less but you can withdraw anytime.',
+        },
+        cdtVsEtf: {
+          title: 'CD vs ETF',
+          optionA: {
+            name: 'CD',
+            risk: 'Low risk',
+            whenToUse: "Perfect if you want safety and to know exactly what you'll earn.",
+          },
+          optionB: {
+            name: 'ETF',
+            risk: 'Medium risk',
+            whenToUse: 'Better if you seek greater long-term growth and can tolerate fluctuations.',
+          },
+          mainDifference: 'CDs have a fixed, guaranteed return. ETFs can provide higher gains but their value fluctuates with the market.',
+        },
+        stockVsEtf: {
+          title: 'Individual Stocks vs ETF',
+          optionA: {
+            name: 'Individual Stocks',
+            risk: 'High risk',
+            whenToUse: 'If you want to pick specific companies and have time to research.',
+          },
+          optionB: {
+            name: 'ETF',
+            risk: 'Medium risk',
+            whenToUse: 'If you prefer automatic diversification without selecting companies one by one.',
+          },
+          mainDifference: 'With stocks, you bet on one company. With ETFs, you invest in many at once, reducing risk if one fails.',
+        },
+        fixedVsEquities: {
+          title: 'Fixed Income vs Stocks',
+          optionA: {
+            name: 'Fixed income (bonds, CDs)',
+            risk: 'Low risk',
+            whenToUse: 'Ideal for preserving capital and earning predictable income.',
+          },
+          optionB: {
+            name: 'Stocks',
+            risk: 'High risk',
+            whenToUse: 'Better for growing your money long-term if you tolerate volatility.',
+          },
+          mainDifference: 'Fixed income is like a steady salary. Stocks are like running your own business: more work, more risk, but potentially more reward.',
+        },
+      },
+      
+      // Common Mistakes
+      mistakes: {
+        title: 'Common Beginner Mistakes',
+        noUnderstanding: {
+          title: 'Investing without understanding',
+          description: 'Putting money into something just because someone recommended it, without researching how it works.',
+          tip: 'Before investing, understand what you are buying and what the risks are.',
+        },
+        quickProfits: {
+          title: 'Expecting quick profits',
+          description: 'Believing you will get rich overnight with investments.',
+          tip: 'Solid investments grow over time. Patience is key.',
+        },
+        noDiversification: {
+          title: 'Not diversifying',
+          description: 'Putting all your money into a single investment or asset type.',
+          tip: 'Spread your money across different investments to reduce risk.',
+        },
+        emotionalDecisions: {
+          title: 'Emotional decisions',
+          description: 'Panic-selling when prices drop or euphoria-buying when they rise.',
+          tip: "Have a plan and stick to it. Don't let emotions guide your decisions.",
+        },
+      },
+      
+      // Investor Profiles
+      profiles: {
+        title: 'What type of investor are you?',
+        conservative: {
+          title: 'Conservative',
+          description: 'Prioritizes safety over gains. Prefers not to risk capital.',
+          suitable: ['CDs and term deposits', 'Government bonds', 'Fixed income funds', 'High-yield savings accounts'],
+        },
+        moderate: {
+          title: 'Moderate',
+          description: 'Seeks a balance between safety and growth. Accepts some volatility.',
+          suitable: ['Diversified ETFs', 'Balanced funds', 'Mix of bonds and stocks', 'Moderate investment funds'],
+        },
+        aggressive: {
+          title: 'Aggressive',
+          description: 'Seeks maximum growth. Tolerates high volatility and risk of losses.',
+          suitable: ['Individual stocks', 'Growth ETFs', 'Sector-specific investments', 'Emerging markets'],
+        },
+      },
+      
+      // Key Takeaways
+      takeaways: {
+        title: 'Key Points to Remember',
+        items: [
+          {
+            title: 'Before investing',
+            points: [
+              'Pay off your high-interest debts first',
+              'Have an emergency fund (3-6 months of expenses)',
+              "Only invest money you won't need soon",
+            ],
+          },
+          {
+            title: 'During your investing journey',
+            points: [
+              'Start small and learn',
+              'Diversification is your friend',
+              'Time in the market matters more than timing',
+            ],
+          },
+        ],
       },
     },
     
