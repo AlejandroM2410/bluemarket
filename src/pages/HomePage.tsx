@@ -140,7 +140,7 @@ const HomePage = () => {
                 className="group block h-full p-8 rounded-2xl bg-primary text-primary-foreground shadow-card hover:shadow-lg transition-all duration-300"
               >
                 <BookOpen className="h-10 w-10 mb-4 opacity-80" />
-                <h3 className="text-2xl font-bold mb-2">{t.nav.learn}</h3>
+                <h3 className="text-2xl font-bold mb-2 text-primary-foreground">{t.nav.learn}</h3>
                 <p className="opacity-80 mb-4">
                   {t.learn.subtitle}
                 </p>
