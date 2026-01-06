@@ -4,6 +4,8 @@ import { ArrowRight, BookOpen, Eye, Globe2, Users, TrendingUp, Shield, Lightbulb
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { FeatureCard } from '@/components/FeatureCard';
+import { WelcomeGuide } from '@/components/WelcomeGuide';
+import { Disclaimer } from '@/components/Disclaimer';
 
 const HomePage = () => {
   const { t } = useLanguage();
@@ -120,6 +122,9 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Welcome Guide for First-Time Users */}
+      <WelcomeGuide />
+
       {/* Quick Links Section */}
       <section className="py-20">
         <div className="container">
@@ -168,6 +173,13 @@ const HomePage = () => {
               </Link>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Footer Disclaimer */}
+      <section className="pb-12">
+        <div className="container max-w-3xl">
+          <Disclaimer variant="inline" />
         </div>
       </section>
     </div>

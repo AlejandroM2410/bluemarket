@@ -8,10 +8,12 @@ import {
   PiggyBank, 
   BarChart3,
   Coins,
-  LineChart
+  LineChart,
+  Info
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ModuleCard } from '@/components/ModuleCard';
+import { Disclaimer } from '@/components/Disclaimer';
 
 const LearnPage = () => {
   const { t } = useLanguage();
@@ -75,9 +77,13 @@ const LearnPage = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t.learn.title}
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
             {t.learn.subtitle}
           </p>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted text-muted-foreground text-sm">
+            <Info className="h-3.5 w-3.5" />
+            <span>{t.common.educational}</span>
+          </div>
         </motion.div>
 
         {/* Modules Grid */}
@@ -97,14 +103,9 @@ const LearnPage = () => {
         </div>
 
         {/* Disclaimer */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.5 }}
-          className="text-center text-sm text-muted-foreground mt-12 max-w-xl mx-auto"
-        >
-          {t.common.disclaimer}
-        </motion.p>
+        <div className="mt-12 max-w-2xl mx-auto">
+          <Disclaimer variant="inline" />
+        </div>
       </div>
     </div>
   );
