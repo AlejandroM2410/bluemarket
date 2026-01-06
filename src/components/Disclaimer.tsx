@@ -25,8 +25,8 @@ export const Disclaimer = ({ variant = 'card' }: DisclaimerProps) => {
 
   if (variant === 'inline') {
     return (
-      <p className="text-xs text-muted-foreground flex items-start gap-2">
-        <Info className="h-3 w-3 flex-shrink-0 mt-0.5" />
+      <p className="text-xs text-muted-foreground flex items-center justify-center gap-2">
+        <Info className="h-3 w-3 flex-shrink-0" />
         <span>{disclaimer.short}</span>
       </p>
     );
