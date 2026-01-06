@@ -16,6 +16,63 @@ export const translations = {
       faq: 'FAQ',
     },
     
+    // App Store Copy
+    appStore: {
+      shortDesc: 'Tu guía para entender inversiones de forma clara y sencilla.',
+      fullDesc: `BlueMarket es una aplicación educativa diseñada para principiantes que quieren entender el mundo de las inversiones sin complicaciones.
+
+✓ Aprende sobre acciones, bonos, ETFs y más
+✓ Explicaciones simples con ejemplos reales
+✓ Calculadora educativa de inversiones
+✓ Glosario de términos financieros
+✓ Contenido 100% bilingüe (Español e Inglés)
+✓ Sin jerga financiera complicada
+
+Ideal para quienes nunca han invertido y quieren empezar a aprender. No requiere conocimientos previos.
+
+⚠️ Solo contenido educativo. No es asesoría financiera.`,
+      valueProps: [
+        'Aprende desde cero, sin experiencia previa',
+        'Explicaciones claras con ejemplos cotidianos',
+        'Calculadora para entender el crecimiento del dinero',
+        'Comparaciones sencillas entre tipos de inversión',
+        'Disponible en español e inglés',
+      ],
+      screenshots: {
+        home: 'Tu punto de partida para aprender a invertir',
+        learn: 'Módulos educativos explicados paso a paso',
+        calculator: 'Simula cómo crece tu dinero con el tiempo',
+        glossary: 'Términos financieros en palabras simples',
+        tools: 'Herramientas para entender riesgo y comparar opciones',
+      },
+    },
+    
+    // Welcome Guide (First-time users)
+    welcomeGuide: {
+      title: '¿Por dónde empezar?',
+      subtitle: 'Te sugerimos estos primeros pasos:',
+      steps: [
+        {
+          title: 'Aprende lo básico',
+          desc: 'Empieza con "¿Qué es invertir?" en la sección Aprende.',
+          link: '/learn',
+          icon: 'book',
+        },
+        {
+          title: 'Prueba la calculadora',
+          desc: 'Simula cómo puede crecer tu dinero con el tiempo.',
+          link: '/tools',
+          icon: 'calculator',
+        },
+        {
+          title: 'Explora el glosario',
+          desc: 'Consulta términos cuando no entiendas algo.',
+          link: '/glossary',
+          icon: 'search',
+        },
+      ],
+    },
+    
     // Home
     home: {
       welcome: 'Bienvenido a BlueMarket',
@@ -504,20 +561,20 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       start: 'Comenzar',
       steps: {
         welcome: {
-          title: 'Bienvenido a BlueMarket',
-          description: 'Tu guía amigable para entender el mundo de las inversiones. Aprende de forma clara y sin complicaciones.',
+          title: '¡Bienvenido a BlueMarket!',
+          description: 'Tu guía amigable para entender el mundo de las inversiones. Aprende de forma clara, visual y sin complicaciones.',
         },
         learn: {
-          title: 'Aprende a tu ritmo',
-          description: 'Descubre qué son las acciones, bonos, ETFs y más. Todo explicado con ejemplos simples y lenguaje cotidiano.',
+          title: 'Aprende a tu propio ritmo',
+          description: 'Descubre qué son las acciones, bonos, ETFs y fondos. Todo explicado con ejemplos del día a día que cualquiera puede entender.',
         },
         noExperience: {
-          title: 'Sin experiencia previa',
-          description: 'No necesitas saber nada de finanzas. Empezamos desde cero y avanzamos juntos paso a paso.',
+          title: 'No necesitas experiencia',
+          description: 'Diseñado para principiantes absolutos. Empezamos desde cero — no asumimos que sabes nada de finanzas.',
         },
         disclaimer: {
-          title: 'Solo contenido educativo',
-          description: 'BlueMarket es una herramienta de aprendizaje. No ofrecemos asesoría financiera ni recomendaciones de inversión.',
+          title: 'Contenido 100% educativo',
+          description: 'BlueMarket te enseña conceptos de inversión. No damos consejos financieros ni recomendamos dónde invertir tu dinero.',
         },
       },
     },
@@ -525,13 +582,14 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
     // Disclaimer
     disclaimer: {
       title: 'Aviso importante',
-      short: 'Este contenido es solo educativo, no es asesoría financiera.',
+      short: 'Contenido educativo. No es asesoría financiera.',
+      medium: 'Este material es solo educativo. No constituye recomendaciones de inversión. Consulta a un profesional.',
       points: [
         'Este contenido tiene fines educativos únicamente',
         'No proporcionamos asesoría financiera personalizada',
-        'Los resultados de la calculadora son estimaciones',
-        'Consulta a un profesional antes de invertir',
-        'Eres responsable de tus propias decisiones financieras',
+        'Los resultados de la calculadora son estimaciones, no garantías',
+        'Consulta a un profesional certificado antes de invertir',
+        'Tú eres responsable de tus propias decisiones financieras',
       ],
     },
     
@@ -578,7 +636,8 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       learnMore: 'Aprender más',
       back: 'Volver',
       next: 'Siguiente',
-      disclaimer: 'Este contenido es solo educativo y no constituye asesoría financiera. Consulta con un profesional antes de tomar decisiones de inversión.',
+      disclaimer: 'Contenido educativo. No constituye asesoría financiera. Consulta a un profesional antes de invertir.',
+      educational: 'Solo educativo',
     },
   },
   
@@ -595,6 +654,63 @@ Consejo: Domina primero las inversiones básicas (fondos, ETFs, acciones) antes 
       tools: 'Tools',
       glossary: 'Glossary',
       faq: 'FAQ',
+    },
+    
+    // App Store Copy
+    appStore: {
+      shortDesc: 'Your guide to understanding investing clearly and simply.',
+      fullDesc: `BlueMarket is an educational app designed for beginners who want to understand the world of investing without complications.
+
+✓ Learn about stocks, bonds, ETFs and more
+✓ Simple explanations with real examples
+✓ Educational investment calculator
+✓ Financial terms glossary
+✓ 100% bilingual content (Spanish & English)
+✓ No complicated financial jargon
+
+Perfect for those who have never invested and want to start learning. No prior knowledge required.
+
+⚠️ Educational content only. Not financial advice.`,
+      valueProps: [
+        'Learn from zero, no prior experience needed',
+        'Clear explanations with everyday examples',
+        'Calculator to understand money growth',
+        'Simple comparisons between investment types',
+        'Available in Spanish and English',
+      ],
+      screenshots: {
+        home: 'Your starting point for learning to invest',
+        learn: 'Educational modules explained step by step',
+        calculator: 'Simulate how your money grows over time',
+        glossary: 'Financial terms in simple words',
+        tools: 'Tools to understand risk and compare options',
+      },
+    },
+    
+    // Welcome Guide (First-time users)
+    welcomeGuide: {
+      title: 'Where to start?',
+      subtitle: 'We suggest these first steps:',
+      steps: [
+        {
+          title: 'Learn the basics',
+          desc: 'Start with "What is investing?" in the Learn section.',
+          link: '/learn',
+          icon: 'book',
+        },
+        {
+          title: 'Try the calculator',
+          desc: 'Simulate how your money can grow over time.',
+          link: '/tools',
+          icon: 'calculator',
+        },
+        {
+          title: 'Explore the glossary',
+          desc: "Look up terms when you don't understand something.",
+          link: '/glossary',
+          icon: 'search',
+        },
+      ],
     },
     
     // Home
@@ -1085,20 +1201,20 @@ Advice: Master basic investments (funds, ETFs, stocks) first before even conside
       start: 'Get Started',
       steps: {
         welcome: {
-          title: 'Welcome to BlueMarket',
-          description: 'Your friendly guide to understanding the world of investing. Learn clearly and without complications.',
+          title: 'Welcome to BlueMarket!',
+          description: 'Your friendly guide to understanding the world of investing. Learn clearly, visually, and without complications.',
         },
         learn: {
           title: 'Learn at your own pace',
-          description: 'Discover what stocks, bonds, ETFs and more are. Everything explained with simple examples and everyday language.',
+          description: 'Discover what stocks, bonds, ETFs and funds are. Everything explained with everyday examples anyone can understand.',
         },
         noExperience: {
-          title: 'No prior experience needed',
-          description: "You don't need to know anything about finance. We start from zero and move forward together step by step.",
+          title: 'No experience required',
+          description: "Designed for complete beginners. We start from zero — we don't assume you know anything about finance.",
         },
         disclaimer: {
-          title: 'Educational content only',
-          description: 'BlueMarket is a learning tool. We do not offer financial advice or investment recommendations.',
+          title: '100% educational content',
+          description: 'BlueMarket teaches investment concepts. We do not give financial advice or recommend where to invest your money.',
         },
       },
     },
@@ -1106,12 +1222,14 @@ Advice: Master basic investments (funds, ETFs, stocks) first before even conside
     // Disclaimer
     disclaimer: {
       title: 'Important Notice',
-      short: 'This content is educational only, not financial advice.',
+      short: 'Educational content. Not financial advice.',
+      medium: 'This material is for educational purposes only. It does not constitute investment recommendations. Consult a professional.',
       points: [
         'This content is for educational purposes only',
         'We do not provide personalized financial advice',
-        'Calculator results are estimates',
-        'Consult a professional before investing',
+        'Calculator results are estimates, not guarantees',
+        'Consult a certified professional before investing',
+        'You are responsible for your own financial decisions',
         'You are responsible for your own financial decisions',
       ],
     },
@@ -1159,7 +1277,8 @@ Advice: Master basic investments (funds, ETFs, stocks) first before even conside
       learnMore: 'Learn more',
       back: 'Back',
       next: 'Next',
-      disclaimer: 'This content is educational only and does not constitute financial advice. Consult a professional before making investment decisions.',
+      disclaimer: 'Educational content. Does not constitute financial advice. Consult a professional before investing.',
+      educational: 'Educational only',
     },
   },
 } as const;
