@@ -38,7 +38,7 @@ const AppContent = () => {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/bluemarket">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
